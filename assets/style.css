@@ -126,6 +126,7 @@ body {
     background-color: cornflowerblue;
 }
 
+/* About  */
 .about {
     text-align: center;
     position: relative;
@@ -141,14 +142,31 @@ body {
     padding: 0px 60px;
     line-height: 1.5em;
 }
+
+/* Previous Work Cards */
+.works {
+    position: relative;
+    text-align: center;
+    top: 74px;
+}
+
+.works h1 {
+    font-size: 3em;
+    padding: 20px;
+}
+
+.cards {
+
+}
+
 /* Footer Styling */
 footer {
-    bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    bottom: 0px;
     border-top: solid 1px black;
     background-color: rgb(105,105,105,.90);
 }
