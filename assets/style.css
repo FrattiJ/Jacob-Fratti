@@ -1,36 +1,146 @@
 /* Universal Styling */
 * {
-   
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Header Styling */
 header {
     top: 0px;
     width: 100%;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 100;
     border-bottom: solid 1px black;
-    background-color: rgb(105,105,105,.90);
+    background-color: rgb(105,105,105, .9);
+}
+
+header div {
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 74px;
+    padding: 5px;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, .9),
+        rgba(255, 0, 180, .9),
+        rgba(0, 100, 200, .9)
+    );
+    background-size: 100% 74px, 0 74px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    border-radius: 50%;
+  }
+  
+.icon:hover {
+    background-size: 0 74px, 100% 74px;
+    border-radius: 50%;
 }
 
 header h1 {
     display: inline-flex;
     flex-wrap: nowrap;
-    padding: 20px;
+    padding: 21px 6px;
+    font-size: 1.7rem;
+    text-align: center;
+    align-items: center;
+    min-width: 160px;
 }
 
 nav li {
     display: inline-flex;
     padding: 20px;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, .9),
+        rgba(255, 0, 180, .9),
+        rgba(0, 100, 200, .9)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  nav li:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropContent {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px 0px 15px 15px;
+}
+  
+.dropContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropContent a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropContent {
+    display: block;
+}
+  
+.dropdown:hover .dropButton {
+    border-bottom: solid 1px black;
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgba(83, 83, 83, 0.9)
 }
 
-/* Aside Styling */
-
 /* Main Styling */
+body {
+    background-color: cornflowerblue;
+}
 
+.about {
+    text-align: center;
+    position: relative;
+    top: 74px;
+}
+
+.about h1 {
+    font-size: 3em;
+    padding: 20px;
+  }
+
+.about p {
+    padding: 0px 60px;
+    line-height: 1.5em;
+}
 /* Footer Styling */
 footer {
     bottom: 0px;
@@ -42,3 +152,9 @@ footer {
     border-top: solid 1px black;
     background-color: rgb(105,105,105,.90);
 }
+
+footer img {
+    height: 2em;
+}
+
+/* Add the youve just been frogged to an on click of the little logo */
