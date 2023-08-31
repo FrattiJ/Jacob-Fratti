@@ -33,8 +33,8 @@ header div {
       ),
       linear-gradient(
         to right,
-        rgba(255, 0, 0, .9),
-        rgba(255, 0, 180, .9),
+        rgba(105, 237, 244, 0.9),
+        rgba(35, 159, 225, 0.9),
         rgba(0, 100, 200, .9)
     );
     background-size: 100% 74px, 0 74px;
@@ -70,8 +70,8 @@ nav li {
       ),
       linear-gradient(
         to right,
-        rgba(255, 0, 0, .9),
-        rgba(255, 0, 180, .9),
+        rgba(105, 237, 244, 0.9),
+        rgba(35, 159, 225, 0.9),
         rgba(0, 100, 200, .9)
     );
     background-size: 100% 3px, 0 3px;
@@ -94,7 +94,7 @@ nav li {
     display: none;
     position: absolute;
     min-width: 160px;
-    background-color: #f1f1f1;
+    background-color: rgb(191, 191, 191);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 0px 0px 15px 15px;
@@ -108,7 +108,8 @@ nav li {
 }
   
 .dropContent a:hover {
-    background-color: #ddd;
+    background-color: rgb(158, 158, 158);
+    border-radius: 15px;
 }
   
 .dropdown:hover .dropContent {
@@ -118,19 +119,21 @@ nav li {
 .dropdown:hover .dropButton {
     border-bottom: solid 1px black;
     border-radius: 15px 15px 0px 0px;
-    background-color: rgba(83, 83, 83, 0.9)
+    background-color: rgba(83, 83, 83, 0.9);
 }
 
 /* Main Styling */
 body {
-    background-color: cornflowerblue;
+    background-color: rgba(83, 83, 83, 1);
 }
 
 /* About  */
 .about {
     text-align: center;
     position: relative;
-    top: 74px;
+    margin-top: 74px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px black;
 }
 
 .about h1 {
@@ -147,17 +150,114 @@ body {
 .works {
     position: relative;
     text-align: center;
-    top: 74px;
+    border-bottom: solid 1px black;
+    padding-bottom: 20px;
 }
 
 .works h1 {
     font-size: 3em;
     padding: 20px;
 }
-
-.cards {
-
+.bigCard {
+    width: 1280px;
+    margin: 20px;
+    background-color: rgb(168, 251, 255);
+    display: inline-flex;
+    flex-wrap: wrap;
 }
+
+.bigCardImg {
+    width: 1280px;
+    height: 480px;
+}
+
+.bigCardImg:hover {
+    opacity: .5;
+}
+
+.bigCardTitle {
+    display: inline-flex;
+    align-items: center;
+    height: 3em;
+}
+
+.bigCardTitle p {
+    font-size: 2em;
+    margin: 0.25em;
+}
+
+.smallCards {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 640px;
+    margin: 40px;
+    background-color: rgb(168, 251, 255);
+}
+
+.cardImg {
+    width: 640px;
+    height: 240px;
+}
+
+.cardImg:hover {
+    opacity: .5;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+
+.cardTitle p {
+    font-size: 2em;
+    margin: 0.25em;
+}
+
+.gitLogo {
+    height: 2.5em;
+    margin: 0.5em;
+}
+
+/* Conact Me Form */
+.contact h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: rgb(191, 191, 191);
+  }
+  
+  input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(141, 141, 141);
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(186, 186, 186);
+  }
+  
+  .form {
+    border-radius: 5px;
+    padding: 20px;
+  }
 
 /* Footer Styling */
 footer {
@@ -165,7 +265,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     border-top: solid 1px black;
     background-color: rgb(105,105,105,.90);
@@ -174,5 +274,3 @@ footer {
 footer img {
     height: 2em;
 }
-
-/* Add the youve just been frogged to an on click of the little logo */

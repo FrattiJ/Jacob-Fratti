@@ -11,7 +11,7 @@
 <body>
     <header>
         <div>
-            <img class="icon" src="./assets/images/Proffesional Headshot.png" href="#top" alt="Professional headshot of Jacob Fratti">
+            <a href="#top"><img class="icon" src="./assets/images/Proffesional Headshot.png" alt="Professional headshot of Jacob Fratti"></a>
             <div class="dropdown">
                 <h1 class="dropButton">Jacob Fratti</h1>
                     <div class="dropContent">
@@ -24,14 +24,12 @@
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#">Previous Works</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#works">Previous Works</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
-    <aside>
 
-    </aside>
     <main>
         <!-- About Me -->
         <section id="about" class="about">
@@ -40,47 +38,78 @@
         </section>
 
         <!-- Work -->
-        <section class="works">
+        <section id="works" class="works">
             <h1>Previous Works</h1>
-            <article class="card">
-                <img src="#" alt="Image of project completed by Jacob">
-                <header>
-
-                </header>
-                <a href="#"><img src="#" alt="GitHub logo"></a>
+            <article class="bigCard">
+                <img src="./assets/images/1280x480.svg" class="bigCardImg" alt="Image of project completed by Jacob">
+                <div class="bigCardTitle">
+                    <p>Project Title</p>
+                    <a href="#"><img class="gitLogo" src="./assets/images/github-mark-white.png" alt="GitHub logo"></a>
+                </div>
             </article>
 
-            <article class="card">
-                <img src="#" alt="Image of project completed by Jacob">
-                <header>
+            <div class="smallCards">
+                <article class="card">
+                    <img src="./assets/images/640x240.svg" class="cardImg" alt="Image of project completed by Jacob">
+                    <div class="cardTitle">
+                        <p>Project Title</p>
+                        <a href="#"><img class="gitLogo" src="./assets/images/github-mark-white.png" alt="GitHub logo"></a>
+                    </div>
+                </article>
 
-                </header>
-                <a href="#"><img src="#" alt="GitHub logo"></a>
-            </article>
+                <article class="card">
+                    <img src="./assets/images/640x240.svg" class="cardImg" alt="Image of project completed by Jacob">
+                    <div class="cardTitle">
+                        <p>Project Title</p>
+                        <a href="#"><img class="gitLogo" src="./assets/images/github-mark-white.png" alt="GitHub logo"></a>
+                    </div>
+                </article>
 
-            <article class="card">
-                <img src="#" alt="Image of project completed by Jacob">
-                <header>
+                <article class="card">
+                    <img src="./assets/images/640x240.svg" class="cardImg" alt="Image of project completed by Jacob">
+                    <div class="cardTitle">
+                        <p>Project Title</p>
+                        <a href="#"><img class="gitLogo" src="./assets/images/github-mark-white.png" alt="GitHub logo"></a>
+                    </div>
+                </article>
 
-                </header>
-                <a href="#"><img src="#" alt="GitHub logo"></a>
-            </article>
-
-            <article class="card">
-                <img src="#" alt="Image of project completed by Jacob">
-                <header>
-
-                </header>
-                <a href="#"><img src="#" alt="GitHub logo"></a>
-            </article>
+                <article class="card">
+                    <img src="./assets/images/640x240.svg" class="cardImg" alt="Image of project completed by Jacob">
+                    <div class="cardTitle">
+                        <p>Project Title</p>
+                        <a href="#"><img class="gitLogo" src="./assets/images/github-mark-white.png" alt="GitHub logo"></a>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- <Contact Me -->
-        <section></section>
+        <section id="contact" class="contact">
+            <h1>Contact Me</h1>
+            <div class="form">
+                <form action="mailto:JacobRFratti@gmail.com">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email..">
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+    
+                </form>
+              </div>
+        </section>
 
     </main>
     <footer>
-        <img src="./assets/images/FrogKnight.PNG">
+        <a href="./assets/images/YouveBeenFrogged.jpg"><img src="./assets/images/FrogKnight.PNG"></a>
     </footer>
 </body>
 
