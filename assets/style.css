@@ -159,16 +159,17 @@ body {
     padding: 20px;
 }
 .bigCard {
-    width: 1280px;
+    /* width: 1280px; */
     margin: 20px;
     background-color: rgb(168, 251, 255);
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .bigCardImg {
-    width: 1280px;
-    height: 480px;
+    /* width: 1280px;
+    height: 480px; */
 }
 
 .bigCardImg:hover {
@@ -193,13 +194,13 @@ body {
 }
 
 .card {
-    width: 640px;
+    /* width: 640px; */
     margin: 40px;
     background-color: rgb(168, 251, 255);
 }
 
 .cardImg {
-    width: 640px;
+    /* width: 640px; */
     height: 240px;
 }
 
@@ -274,3 +275,11 @@ footer {
 footer img {
     height: 2em;
 }
+
+/* Responsive Design */
+
+@media  (max-width: 645px) {
+    .about {
+        margin-top: 170px;
+    }
+};
